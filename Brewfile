@@ -1,1 +1,6 @@
-brew install zsh zsh-completions
+
+tap 'caskroom/cask'
+
+install 'zsh'
+install 'zsh-completions'
+install 'arduino'
