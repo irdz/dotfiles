@@ -1,9 +1,13 @@
 # Brewfile
 # To install run `brew bundle`
 
-tap 'caskroom/cask'
-tap 'Caskroom/cask/arduino'
+# Install all apps in /Applications
+cask_args appdir: '/Applications'
 
+
+tap 'caskroom/cask'
+
+brew 'arduino'
 brew 'git'
 brew 'mercurial'
 brew 'tree'
