@@ -58,14 +58,39 @@ printf "\n\n${yel} _____     ______     ______   ______   __     __         ____
   \\/____/   \\/_____/     \\/_/   \\/_/     \\/_/   \\/_____/   \\/_____/   \\/_____/${end}
                         ${pur}BEGINNING DOTFILES INSTALLATION${end}\n\n\n"
 
+# ==========================
+#
 # First install Homebrew
+#
 # ==========================
 msg "Installing Homebrew..."
 
-if [[ $(brew --version) ]]; then
-  success "Homebrew is already installed"
-else
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# Only run on a Mac
+if [ "$(uname -s)" == "Darwin" ]
+then
+  if [[ $(brew --version) ]]
+  then
+    success "Homebrew is already installed"
+  else
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    success "Homebrew was succesfully installed"
+  fi
 fi
-# ==========================
 
+# ==========================
+#
+# Now install the brew packages
+#
+# ==========================
+if [[ $(brew --version) ]]
+then
+  msg "Running brew bundle"
+  brew bundle
+fi
+
+
+# ==========================
+#
+# Now iterate through all the install.sh files
+#
+# ==========================
