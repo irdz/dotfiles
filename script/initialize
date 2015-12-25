@@ -28,7 +28,7 @@ grn=$'\e[0;32m'
 end=$'\e[0m'
 
 msg() {
-  printf "${pur}~ $*${end}\n"
+  printf "${pur}> $*${end}\n"
 }
 
 success() {
@@ -62,5 +62,10 @@ printf "\n\n${yel} _____     ______     ______   ______   __     __         ____
 # ==========================
 msg "Installing Homebrew..."
 
+if [[ $(brew --version) ]]; then
+  success "Homebrew is already installed"
+else
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
 # ==========================
 
