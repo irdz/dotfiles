@@ -13,7 +13,7 @@ $ sh script/initialize
 
 ### Global Git Ignore
 
-`$ git config --global core.excludesfile ~/.config/git/ignore`
+`$ git config --global core.excludesfile ~/.gitignore_global`
 
 
 ## Inspiration
