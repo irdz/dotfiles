@@ -11,6 +11,7 @@ tap 'homebrew/bundle'
 
 brew 'git'
 brew 'docker'
+brew 'gpg'
 brew 'mercurial'
 brew 'openssl'
 brew 'mysql'
