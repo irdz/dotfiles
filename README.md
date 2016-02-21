@@ -23,3 +23,10 @@ A lot of inspiration from some of the following dotfiles:
 - [holman](https://github.com/holman/dotfiles)
 - [soffes](https://github.com/soffes/dotfiles)
 - [daneden](https://github.com/daneden/dotfiles)
+
+
+# Rails
+
+```
+gem install rails -v 4.2.2
+```
