@@ -13,7 +13,12 @@ $ sh script/initialize
 
 ### Global Git Ignore
 
-`$ git config --global core.excludesfile ~/.gitignore_global`
+```
+$ git config --global core.excludesfile ~/.gitignore_global
+$ git config --global push.default matching
+$ git config --global user.name "Ivan Rodriguez"
+$ git config --global user.name "Email"
+```
 
 
 ### To set up Sublime CLI
