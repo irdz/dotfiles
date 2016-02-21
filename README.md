@@ -16,6 +16,11 @@ $ sh script/initialize
 `$ git config --global core.excludesfile ~/.gitignore_global`
 
 
+### To set up Sublime CLI
+
+`ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl`
+
+
 ## Inspiration
 
 A lot of inspiration from some of the following dotfiles:
