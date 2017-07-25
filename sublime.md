@@ -52,7 +52,10 @@ In user preferences add the following JSON code:
 
 ### Command Line
 
-  $ ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" /usr/bin/subl
+```
+$ ~/ sudo mkdir -p /usr/local/bin
+$ ~/ sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin
+```
 
 ### Icon
 
