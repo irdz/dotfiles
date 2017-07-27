@@ -5,14 +5,9 @@
 
 ### Package Control
 
-To install package control hit ctrl ` and you should paste the following code:
+If it does not come as a default, install package control via [the package control website](https://packagecontrol.io/installation).
 
-```
-  import urllib2,os; pf='Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler( ))); open( os.path.join( ipp, pf), 'wb' ).write( urllib2.urlopen( 'http://sublime.wbond.net/' +pf.replace( ' ','%20' )).read()); print( 'Please restart Sublime Text to finish installation')
-```
-
-
-Packages to install:
+Afterwards, install the following packages:
 
 1. SideBar Enhancements
 2. All Autocomplete
@@ -24,33 +19,35 @@ Packages to install:
 8. Emmet
 9. GitHubinator
 10. Bracket Highlighter
+11. Flatland Theme
 
 ### Sublime User Settings
 
 In user preferences add the following JSON code:
 
-```
+```javascript
   {
     "close_windows_when_empty": true,
-    "color_scheme": "Packages/Color Scheme - Default/Monokai Soda.tmTheme",
+    "color_scheme": "Packages/Theme - Flatland/Flatland Monokai.tmTheme",
+    "flatland_square_tabs": true,
+    "font_size": 12.0,
     "highlight_line": true,
     "ignored_packages":
     [
       "Vintage"
     ],
     "tab_size": 2,
-    "theme":
-    [
-      "Soda Dark.sublime-theme"
-    ],
+    "theme": "Flatland Dark.sublime-theme",
+    "trailing_spaces_include_current_line": false,
     "translate_tabs_to_spaces": true,
     "trim_trailing_white_space_on_save": true,
-    "trailing_spaces_include_current_line": false,
     "word_separators": "./\\()\"':,.;<>~!@#$%^&*|+=[]{}`~?"
   }
 ```
 
 ### Command Line
+
+Create an alias for Sublime.
 
 ```
 $ ~/ sudo mkdir -p /usr/local/bin
@@ -59,8 +56,9 @@ $ ~/ sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
 
 ### Icon
 
-	$ mv ~/Downloads/st2.icns /Applications/Sublime\ Text\ 2.app/Contents/Resources/Sublime\ Text\ 2.icns
-
+```
+$ mv ~/Downloads/st2.icns /Applications/Sublime\ Text\ 2.app/Contents/Resources/Sublime\ Text\ 2.icns
+```
 
 ### Pasting
 
