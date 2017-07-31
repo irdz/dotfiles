@@ -14,7 +14,7 @@ function git_color {
     if [[ "$STATUS" == *'Not a git repository'* ]]; then
         echo ""
     else
-        if [[ "$STATUS" == *'Changes not staged for commit'* ]] || [[ "$STATUS" == *'You have unmerged paths'* ]]; then
+        if [[ "$STATUS" == *'Changes not staged for commit'* ]] || [[ "$STATUS" == *'You have unmerged paths'* ]] || [[ "$STATUS" == *'Untracked files'* ]]; then
             # red if need to commit
             echo -e '\033[0;31m'
         else
