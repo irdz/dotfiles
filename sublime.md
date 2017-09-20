@@ -66,7 +66,8 @@ Add the following to the Key Bindings - User file:
 ```
   [
     { "keys": ["super+v"], "command": "paste_and_indent" },
-    { "keys": ["super+shift+v"], "command": "paste" }
+    { "keys": ["super+shift+v"], "command": "paste" },
+    { "keys": ["super+b"], "command": "goto_definition" }
   ]
 ```
 
