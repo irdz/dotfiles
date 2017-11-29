@@ -14,7 +14,7 @@ brew 'docker'
 brew 'gpg'
 brew 'heroku'
 brew 'httpie'
-breq 'jq'
+<<<<<<< HEAD
 brew 'kubernetes-cli'
 brew 'mercurial'
 brew 'openssl'
