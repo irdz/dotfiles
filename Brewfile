@@ -7,6 +7,7 @@ cask_args appdir: '/Applications'
 
 tap 'caskroom/cask'
 tap 'homebrew/bundle'
+tap 'caskroom/versions'
 
 
 brew 'git'
@@ -29,8 +30,8 @@ brew 'tree'
 brew 'wget'
 brew 'zsh'
 brew 'zsh-completions'
-brew 'caskroom/cask/brew-cask'
 
+cask 'alfred'
 cask 'arduino'
 cask 'atom'
 cask 'dropbox'
