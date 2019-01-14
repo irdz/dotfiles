@@ -77,6 +77,19 @@ then
   fi
 fi
 
+
+
+# =======
+# Create a Dev directory in the home directory
+mkdir $HOME/Dev
+
+# Install Git
+brew install git
+
+
+# Clone repository
+git clone 
+
 # ==========================
 #
 # Now install the brew packages
